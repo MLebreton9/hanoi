@@ -26,4 +26,24 @@ public class DisqueTest {
 		int actual = dSmall.compareTo(dMedium);
 		assertEquals(expected, actual);
 	}
+	
+	@Test
+	public void compareTo_MediumTall_Negative(){
+		int expected = -1;
+		int actual = dMedium.compareTo(dTall);
+		assertEquals(expected, actual);
+	}
+	
+	public void compareTo_MediumSmall_True(){
+		int expected = -1;
+		int actual = dMedium.compareTo(dSmall);
+		assertEquals(expected, actual);
+	}
+	
+	public void compareTo_MediumMedium_True(){
+		int expected = -1;
+		int actual = dMedium.compareTo(dMedium);
+		assertEquals(expected, actual);
+	}
+	
 }
